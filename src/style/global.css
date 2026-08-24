@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap");
+
 * {
 	margin: 0;
 	padding: 0;
@@ -9,6 +11,9 @@
 	--button-color: rgb(56, 53, 96);
 	--text: white;
 	--planet-glow: rgba(255, 255, 255, 0.389);
+	--saturn-ring-color: rgba(244, 231, 189, 0.65);
+
+
 }
 
 [data-theme="light"] {
@@ -16,6 +21,7 @@
 	--button-color: rgb(215, 212, 167);
 	--text: rgb(31, 29, 58);
 	--planet-glow: rgb(137, 133, 66);
+	--saturn-ring-color: rgba(126, 101, 50, 0.7);
 }
 
 html,
@@ -27,6 +33,8 @@ body {
 	min-width: 320px;
 	background: var(--background);
 	color: var(--text);
+	font-family: "Space Grotesk", sans-serif;
+
 }
 
 .app {
