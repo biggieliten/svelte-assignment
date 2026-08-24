@@ -1,5 +1,5 @@
 import type { PageLoad } from "./$types";
-import { planets } from "$lib/plantes";
+import { planets } from "$lib/planets";
 import { error } from "@sveltejs/kit";
 
 export const load: PageLoad = ({ params }) => {
