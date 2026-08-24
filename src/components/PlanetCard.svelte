@@ -1,14 +1,10 @@
 <script lang="ts">
-  import type { Planet } from "$lib/plantes";
+  import type { Planet } from "$lib/planets";
 
-  let { planet, mode }: { planet: Planet; mode: boolean } = $props();
+  let { planet }: { planet: Planet } = $props();
 </script>
 
-<li
-  class="planet {planet.slug}"
-  class:has-ring={planet.hasRing}
-  class:light-mode={mode}
->
+<li class="planet {planet.slug}" class:has-ring={planet.hasRing}>
   <a href={`/planets/${planet.slug}`}
     ><span class="planet-name">{planet.name}</span></a
   >
@@ -37,18 +33,12 @@
     transition: transform 500ms ease;
   }
 
-  .planet.light-mode {
-    .planet-name {
-      color: rgb(31, 29, 58);
-    }
-  }
-
   .planet-name {
+    color: var(--text);
     position: absolute;
     bottom: calc(100% + 0.5rem);
     left: 50%;
     margin-bottom: 0.7rem;
-    color: white;
     font-size: clamp(1rem, 1.2vw, 1.4rem);
     opacity: 0;
     visibility: hidden;
@@ -68,11 +58,7 @@
   }
   .planet:hover {
     transform: scale(1.1);
-    box-shadow: rgba(255, 255, 255, 0.389) 0px 0px 200px 0px;
-  }
-  .planet.light-mode:hover {
-    transform: scale(1.1);
-    box-shadow: rgb(137, 133, 66) 0px 0px 200px 0px;
+    box-shadow: var(--planet-glow) 0 0 200px 0;
   }
 
   .planet.has-ring::before {

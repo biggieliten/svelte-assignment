@@ -4,7 +4,37 @@
 	box-sizing: border-box;
 }
 
+:root {
+	--background: rgb(31, 29, 58);
+	--button-color: rgb(56, 53, 96);
+	--text: white;
+	--planet-glow: rgba(255, 255, 255, 0.389);
+}
+
+[data-theme="light"] {
+	--background: rgb(229, 228, 207);
+	--button-color: rgb(215, 212, 167);
+	--text: rgb(31, 29, 58);
+	--planet-glow: rgb(137, 133, 66);
+}
+
+html,
 body {
-	width: 100vw;
-	height: 100vh;
+	height: 100%;
+}
+
+body {
+	min-width: 320px;
+	background: var(--background);
+	color: var(--text);
+}
+
+.app {
+	display: flex;
+	height: 100%;
+	background: var(--background);
+	color: var(--text);
+	transition:
+		background-color 200ms ease,
+		color 200ms ease;
 }
