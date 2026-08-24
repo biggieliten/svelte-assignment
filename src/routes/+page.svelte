@@ -34,5 +34,11 @@
     justify-content: center;
     align-items: center;
     gap: 2rem;
+    padding: 0 0.5rem;
+  }
+  @media (max-width: 600px) {
+    .planet-wrapper {
+      gap: 0.7rem;
+    }
   }
 </style>

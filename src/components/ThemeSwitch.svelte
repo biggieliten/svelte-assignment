@@ -29,4 +29,15 @@
       right: 11px;
     }
   }
+
+  @media (min-width: 3000px) {
+    .mode-switch {
+      width: 3.5rem;
+      height: 3.5rem;
+    }
+
+    .mode-switch span {
+      font-size: 2rem;
+    }
+  }
 </style>
