@@ -69,7 +69,7 @@
     left: -16%;
     width: 130%;
     height: clamp(0.1rem, 0.5vw, 0.344rem);
-    background: rgba(255, 255, 255, 0.4);
+    background: var(--saturn-ring-color);
     transform: rotate(-30deg);
   }
 </style>

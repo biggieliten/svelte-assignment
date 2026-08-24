@@ -1,4 +1,4 @@
-export type Theme = "dark" | "light";
+type Theme = "dark" | "light";
 
 export let theme = $state({ mode: "dark" as Theme });
 
