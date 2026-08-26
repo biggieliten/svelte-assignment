@@ -7,7 +7,8 @@
 }
 
 :root {
-	--background: rgb(31, 29, 58);
+	--primary: rgb(31, 29, 58);
+	--secondary: rgb(52, 49, 92);
 	--button-color: rgb(56, 53, 96);
 	--text: white;
 	--planet-glow: rgba(255, 255, 255, 0.389);
@@ -15,7 +16,8 @@
 }
 
 [data-theme="light"] {
-	--background: rgb(229, 228, 207);
+	--primary: rgb(229, 228, 207);
+	--secondary: rgb(212, 210, 175);
 	--button-color: rgb(215, 212, 167);
 	--text: rgb(31, 29, 58);
 	--planet-glow: rgb(137, 133, 66);
@@ -29,7 +31,7 @@ body {
 
 body {
 	min-width: 320px;
-	background: var(--background);
+	background: var(--primary);
 	color: var(--text);
 	font-family: "Space Grotesk", sans-serif;
 }
@@ -37,7 +39,7 @@ body {
 .app {
 	display: flex;
 	height: 100%;
-	background: var(--background);
+	background: var(--primary);
 	color: var(--text);
 	transition:
 		background-color 200ms ease,
