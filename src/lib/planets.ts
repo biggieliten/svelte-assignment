@@ -138,6 +138,16 @@ export const planets: Planet[] = [
   },
 ];
 
+export const planetOptions: PlanetOptionsType[] = [
+  { label: "Terrestrial Planet", type: "terrestrial" },
+  { label: "Gas Giant", type: "gas" },
+  { label: "Ice Giant", type: "ice" },
+];
+
+export type PlanetOptionsType = {
+  label: string;
+  type: string;
+};
 export type Planet = {
   slug: string;
   name: string;
