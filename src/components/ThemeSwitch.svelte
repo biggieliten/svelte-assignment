@@ -17,7 +17,6 @@
     height: 2.5rem;
     top: 1rem;
     right: 1rem;
-
     border-radius: 50%;
     border: none;
     cursor: pointer;

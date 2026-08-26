@@ -12,8 +12,6 @@
 	--text: white;
 	--planet-glow: rgba(255, 255, 255, 0.389);
 	--saturn-ring-color: rgba(244, 231, 189, 0.65);
-
-
 }
 
 [data-theme="light"] {
@@ -34,7 +32,6 @@ body {
 	background: var(--background);
 	color: var(--text);
 	font-family: "Space Grotesk", sans-serif;
-
 }
 
 .app {
