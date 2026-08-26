@@ -1,42 +1,38 @@
-# sv
+# Solar System in Svelte
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
+Simple app that displays the planets in our solar system. Each planet is a clickable anchor which redirects you to a new page containing information about the planet.
 
-## Creating a project
+## Features
 
-If you're seeing this, you've probably already done this step. Congrats!
+- Overview of all eight planets
+- Interactive planet cards with hover effects
+- Dedicated detail page for each planet
+- Planet descriptions and facts:
+  - Planet type
+  - Diameter
+  - Number of moons
+  - Temperature range
+- Dark and light theme switch
+- Responsive layout for desktop and mobile devices
+
+## Tech Stack
+
+- SvelteKit
+- Svelte 5
+- TypeScript
+- Vite
+- CSS
+
+## Getting Started
+
+Install the dependencies:
 
 ```sh
-# create a new project
-npx sv create my-app
+npm install
 ```
 
-To recreate this project with the same configuration:
-
-```sh
-# recreate this project
-npx sv@0.17.0 create --template minimal --types ts --install npm .
-```
-
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+Start dev server:
 
 ```sh
 npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
 ```
-
-## Building
-
-To create a production version of your app:
-
-```sh
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
